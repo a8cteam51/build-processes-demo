@@ -7,9 +7,36 @@
     "url": "https://github.com/a8cteam51/build-processes-demo/issues"
   },
   "devDependencies": {
-    "@wordpress/scripts": "latest"
+    "@wordpress/scripts": "latest",
+    "@wordpress/eslint-plugin": "latest",
+    "@wordpress/stylelint-config": "latest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:@wordpress/eslint-plugin/recommended"
+    ],
+    "globals": {
+      "jQuery": true
+    },
+    "ignorePatterns": [
+      "**/build/**"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "@wordpress/stylelint-config/scss"
+    ],
+    "ignoreFiles": [
+      "**/build/**"
+    ]
   },
   "scripts": {
+    "lint:scripts": "npm run lint:scripts:theme && npm run lint:scripts:mu-plugins",
+    "lint:scripts:theme": "eslint themes/$npm_package_name/**/*.{js,jsx,ts,tsx} --no-error-on-unmatched-pattern",
+    "lint:scripts:mu-plugins": "eslint mu-plugins/**/*.{js,jsx,ts,tsx} --no-error-on-unmatched-pattern",
 
+    "lint:styles": "npm run lint:style:theme && npm run lint:style:mu-plugins",
+    "lint:styles:theme": "stylelint themes/$npm_package_name/**/*.{css,scss} !themes/$npm_package_name/style.css --allow-empty-input --report-descriptionless-disables --report-invalid-scope-disables --report-needless-disables",
+    "lint:styles:mu-plugins": "stylelint mu-plugins/**/*.{css,scss} --report-descriptionless-disables --allow-empty-input --report-invalid-scope-disables --report-needless-disables"
   }
 }
