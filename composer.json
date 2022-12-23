@@ -27,6 +27,7 @@
     "ext-json": "*"
   },
   "require-dev": {
+    "johnpbloch/wordpress-core": "*",
     "wpackagist-theme/blockbase": "*",
     "wpackagist-plugin/woocommerce": "*",
 
