@@ -1,16 +1,2 @@
-/**
- * These styles should be loaded by the Block Editor only
- */
-/**
- * Core
- * - Description of core styles
- */
-.wp-theme-style {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-  -webkit-appearance: auto;
-          appearance: auto;
-  direction: ltr;
-}
+.wp-theme-style{-webkit-appearance:auto;appearance:auto;background-color:#21759b;color:#fff;direction:ltr;padding:2px}
 /*# sourceMappingURL=style-editor.css.map */

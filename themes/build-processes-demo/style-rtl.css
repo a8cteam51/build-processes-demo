@@ -1,4 +1,4 @@
-/*
+/*! important
 Theme Name:         Build Processes Demo Theme
 Theme URI:          https://github.com/a8cteam51/build-processes-demo
 Author:             WordPress Special Projects
@@ -16,16 +16,4 @@ Tags:               demo, build process
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-*/
-/**
- * Core
- * - Description of core styles
- */
-.wp-theme-style {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-  -webkit-appearance: auto;
-          appearance: auto;
-  direction: rtl;
-}
+*/.wp-theme-style{-webkit-appearance:auto;appearance:auto;background-color:#21759b;color:#fff;direction:rtl;padding:2px}
