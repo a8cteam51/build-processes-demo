@@ -60,7 +60,7 @@ function bpd_get_theme_asset_meta( string $asset_path, ?array $extra_dependencie
 
 	if ( is_array( $extra_dependencies ) ) {
 		$asset_meta['dependencies'] = array_merge( $asset_meta['dependencies'], $extra_dependencies );
-		$asset_meta['dependencies'] = array_filter( array_unique( $asset_meta['dependencies'] ));
+		$asset_meta['dependencies'] = array_filter( array_unique( $asset_meta['dependencies'] ) );
 	}
 
 	return $asset_meta;
