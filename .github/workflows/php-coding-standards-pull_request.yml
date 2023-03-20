@@ -45,5 +45,5 @@ jobs:
       - name: Run PHP_CodeSniffer
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            phpcs --standard=./vendor/a8cteam51/team51-configs/quality-tools/phpcs.xml.dist --basepath=. $file
+            ./vendor/bin/phpcs --standard=./vendor/a8cteam51/team51-configs/quality-tools/phpcs.xml.dist --basepath=. $file
           done
