@@ -36,7 +36,7 @@ function bpd_get_theme_slug(): string {
  *
  * @return  array|null
  */
-function bpd_get_theme_asset_meta( string $asset_path, ?array $extra_dependencies = null ): ?array {
+function bpd_get_theme_asset_meta(string $asset_path, ?array $extra_dependencies = null ): ?array {
 	if ( ! file_exists( $asset_path ) || ! str_starts_with( $asset_path, get_stylesheet_directory() ) ) {
 		return null;
 	}
