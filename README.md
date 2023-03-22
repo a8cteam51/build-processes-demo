@@ -1,7 +1,7 @@
 # Build Processes Demo
 
 > **Warning**
-This project is now archived and will receive no further updates. All future work will be done in the [Team51 Project Scaffold repository](https://github.com/a8cteam51/team51-project-scaffold).
+This project is now archived and will receive no further updates. All future work will be done in the [Team51 Project Scaffold repository](https://github.com/a8cteam51/team51-project-scaffold). Thank you to everyone who was worked on this and helped make this a reality!
 
 This is a demo project for showcasing standardized build processes of theme and plugin assets. Learn more about it in the [Soft Launch](https://wpspecialprojectsp2.wordpress.com/2023/01/26/front-end-build-processes-task-force-product-soft-launch/) post.
 
